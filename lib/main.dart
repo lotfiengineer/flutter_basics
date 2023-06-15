@@ -1,21 +1,14 @@
 import 'package:flutter/material.dart';
 
+import 'package:basics/gradient_container.dart';
+
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 95, 202, 98),
-              Color.fromARGB(255, 24, 107, 27),
-            ]
-          ),
-        ),
-        child: const Center(
-          child: Text('Mohammad Lotfi'),
-        ),
+  runApp(
+    const MaterialApp(
+      home: GradientContainer(
+        Color.fromARGB(255, 223, 137, 16),
+        Color.fromARGB(255, 11, 252, 240),
       ),
     ),
-  ));
+  );
 }
